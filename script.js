@@ -23,12 +23,12 @@ navBar.appendChild(contactButton);
 const buttons = document.querySelectorAll("button");
 
 function activeButton(clickedButton) {
-  clickedButton.onclick = e => {
-      e.target.style.cssText = "opacity: 100%; font-size: var(--fs-600)"
+  clickedButton.onclick = (e) => {
+    e.target.style.cssText = "opacity: 100%; scale: 1.5;";
     buttons.forEach((button) => {
-        if (button !== e.target) {
-            button.style.cssText = 'opacity: 30%; border: none'
-        }
+      if (button !== e.target) {
+        button.style.cssText = "opacity: 30%; border: none";
+      }
     });
   };
 }
